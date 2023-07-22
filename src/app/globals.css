@@ -18,10 +18,15 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
+
+.button {
+  background: linear-gradient(45deg, white 50%, rgba(255,255,255,0.75) 50%);
+  background-size: 200% 200%;
+  transition: all 1s ease;
+}
+
+.button:hover {
+  background-position: 100% 0;
+}
+
